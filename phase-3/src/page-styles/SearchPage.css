@@ -1,0 +1,97 @@
+body {
+    margin:0px;
+}
+.nonHeader {
+    padding: 5px;
+}
+.searchText {
+    margin-top: 4px;
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+}
+
+.searchButton {
+    display: inline-block;
+    padding: 0.95em 1.3em;
+    border: 0.1em solid;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.2s;
+    background-color: #20b1d1;
+}
+.searchButton:hover {
+    color: #FFFFFF;
+    background-color: #3098af;
+}
+.searchIcon {
+    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+}
+
+.filter {
+    width: 100px;
+    max-width: 150px;
+    overflow: hidden; /* Prevents expansion */
+    padding: 2px;
+}
+.filter:hover {
+    color: #000000;
+    border-color: #000000;
+}
+.filterContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.inputWrapper {
+    background-color: #FFFFFF;
+    width: 25%;
+    height: 2.5rem;
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #000000;
+}
+.resultsContainer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;  /* Make the list items appear in a row */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    gap: 10px; /* Space between buttons */
+}
+.resultsContainer li {
+    padding: 10px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.resultsContainer button {
+    display: inline-block;
+    padding: 0.85em 0.75em;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    text-align: center;
+    transition: all 0.2s;
+    width: 250px;
+    background-color: transparent;
+    border-color: transparent;
+}
+.resultsContainer button:hover {
+    color: #FFFFFF;
+    background-color: #3098af;
+}
