@@ -1,5 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
+import BookPage from './BookPage';
 import SearchPage from './SearchPage';
 //import HomePage from './HomePage';
 import {
@@ -12,6 +13,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<SearchPage />} />
+          <Route path="/book" element={<BookPage />} />
         </Routes>
       </Router>
     </div>

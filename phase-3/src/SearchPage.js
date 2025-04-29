@@ -13,7 +13,7 @@ function SearchPage() {
   const sorting = ["ASC", "DESC"];
 
   function playerFunction(row) {
-    navigator("/player", { state:  row.Name });
+    navigator("/book", { state:  row.title });
   }
 
   const sendMessage = async () => 
