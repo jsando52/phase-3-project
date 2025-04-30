@@ -1,0 +1,41 @@
+.Button {
+    display: inline-block;
+    padding: 0.85em 1.2em;
+    border: 0.1em solid;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.2s;
+    background-color: #20b1d1;
+}
+.Button:hover {
+    color: #FFFFFF;
+    background-color: #3098af;
+}
+
+.searchIcon {
+    margin-top: 0px;
+    width: 15px;
+    height: 15px;
+}
+
+.container {
+    display: flex;
+    align-items: right;
+    padding: 10px 10px;
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+
+
+.homeButton {
+    padding: 10px 10px;
+    background: none;
+    color: black;
+    border: none;
+    cursor: pointer;
+}

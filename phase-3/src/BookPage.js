@@ -1,5 +1,6 @@
 import { React, useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import Header from './Header.js';
 import "./page-styles/bookPage.css"
 function BookPage()
 {
@@ -66,6 +67,7 @@ function BookPage()
    
     return (
         <div>
+            <Header />
         <div className="table-div">
             <h2>{message} information</h2>
             {renderStats(bookData)}

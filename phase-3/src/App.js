@@ -13,6 +13,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<SearchPage />} />
+          <Route path="/search" element={<SearchPage />} />
           <Route path="/book" element={<BookPage />} />
         </Routes>
       </Router>

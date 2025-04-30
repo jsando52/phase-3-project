@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import Header from './Header.js';
 import "./page-styles/SearchPage.css"; // Import the external CSS file
 
 function SearchPage() {
@@ -50,7 +51,7 @@ function SearchPage() {
 
   return (
     <div>
-      
+      <Header />
         <div>
           <div className="filterContainer">
             <p>Filter</p>
