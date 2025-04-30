@@ -46,17 +46,18 @@ def sortByRetailer(query, sort, conn):
     return SQLToJSON(cursor)
 
 # sorts book info by price, in either ASC or DESC order
-def sortByPrice(sort, conn):
+def sortByPrice(query, sort, conn):
     sort = "ASC" if sort.upper() == "ASC" else "DESC"
     sql = f'''
         SELECT price, name, title, author, genre
         FROM book, retailer, price
         WHERE book.book_id = price.book_id
         AND retailer.retailer_id = price.retailer_id
+        AND title LIKE %s
         Order by price {sort}
         '''
     cursor = conn.cursor()
-    cursor.execute(sql)
+    cursor.execute(sql, (f'%{query}%',))
     return SQLToJSON(cursor)
 
 # when clicking on a book, expands the book's information from the database in one area

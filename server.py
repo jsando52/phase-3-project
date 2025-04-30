@@ -24,7 +24,7 @@ def search_page():
     data = request.get_json()
     success = searchQuery(data, conn)
     if success:
-        print("success")
+        #print("success")
         return jsonify(searchQuery(data, conn)), 200
     else:
         return jsonify({"message": "Search didn't find anything or input was wrong"})
