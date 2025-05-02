@@ -10,9 +10,9 @@ CORS(app)
 try:
     conn = psycopg2.connect(
         host="localhost",
-        database="phase-03",
-        user="postgres",
-        password="Mirko&Chie",
+        database="",
+        user="",
+        password="",
         port="5432"
     )
     print("Successful Connection to Phase 3 database")
